@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Stocks News</title>
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <!-- <link rel="icon" href="URL"> -->
+</head>
+
+<body>
+    
+    <nav>
+        <input id="input-field" placeholder="Enter a ticker" onkeydown="if(event.keyCode==13) { fetchFunc(); return false; }">
+        <button id="search-button" onclick="fetchFunc()"><i class="fa fa-search"></i></button>
+    </nav>
+    
+    <div class="news-container"></div>
+</body>
+</html>
